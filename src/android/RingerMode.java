@@ -7,6 +7,7 @@ import org.json.JSONException;
 import android.content.Context;
 import android.media.AudioManager;
 import android.os.Bundle;
+import android.util.log;
 
 public class RingerMode extends CordovaPlugin {
     private enum RINGER_MODE {
@@ -15,6 +16,7 @@ public class RingerMode extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
+        Log.v("silencify","testing logcat")
         if (RINGER_MODE.valueOf(action) == RINGER_MODE.VIBRATE) {
 
             AudioManager audioManager = (AudioManager) cordova.getActivity().getSystemService(Context.AUDIO_SERVICE);
