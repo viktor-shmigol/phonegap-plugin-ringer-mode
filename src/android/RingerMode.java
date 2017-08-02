@@ -10,9 +10,6 @@ import android.os.Bundle;
 import android.util.log;
 
 public class RingerMode extends CordovaPlugin {
-    private enum RINGER_MODE {
-        VIBRATE, SILENT, NORMAL
-    }
 
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
@@ -34,7 +31,7 @@ public class RingerMode extends CordovaPlugin {
             //     break;
             // }
             return true;
-        } else if (RINGER_MODE.valueOf(action) == RINGER_MODE.VIBRATE) {
+        } else if (action.equals("VIBRATE")) {
 
             AudioManager audioManager = (AudioManager) cordova.getActivity().getSystemService(Context.AUDIO_SERVICE);
             audioManager.setRingerMode(AudioManager.RINGER_MODE_VIBRATE);
@@ -42,7 +39,7 @@ public class RingerMode extends CordovaPlugin {
 
             return true;
 
-        } else if (RINGER_MODE.valueOf(action) == RINGER_MODE.NORMAL) {
+        } else if (action.equals("NORMAL")) {
 
             AudioManager audioManager = (AudioManager) cordova.getActivity().getSystemService(Context.AUDIO_SERVICE);
             audioManager.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
@@ -50,7 +47,7 @@ public class RingerMode extends CordovaPlugin {
 
             return true;
 
-        } else if (RINGER_MODE.valueOf(action) == RINGER_MODE.SILENT) {
+        } else if (action.equals("SILENT")) {
 
             AudioManager audioManager = (AudioManager) cordova.getActivity().getSystemService(Context.AUDIO_SERVICE);
             audioManager.setRingerMode(AudioManager.RINGER_MODE_SILENT);
