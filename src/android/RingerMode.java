@@ -40,6 +40,20 @@ public class RingerMode extends CordovaPlugin {
 
             return true;
 
+        } else if (action.equals("GET")) {
+            AudioManager audioManager = (AudioManager) cordova.getActivity().getSystemService(Context.AUDIO_SERVICE);
+            switch (audioManager.getRingerMode()) {
+            case AudioManager.RINGER_MODE_SILENT:
+                callbackContext.success("SILENT");
+                break;
+            case AudioManager.RINGER_MODE_VIBRATE:
+                callbackContext.success("VIBRATE");
+                break;
+            case AudioManager.RINGER_MODE_NORMAL:
+                callbackContext.success("NORMAL");
+                break;
+            }
+            return true;
         } else {
 
             return false;
