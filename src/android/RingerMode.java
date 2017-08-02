@@ -13,7 +13,7 @@ public class RingerMode extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
-        Log.v("silencify","testing logcat")
+        Log.v("silencify", "testing logcat");
         if (action.equals("GET")) {
             //callbackContext.success("SILENT");
             callbackContext.success("Not Working");
@@ -21,7 +21,7 @@ public class RingerMode extends CordovaPlugin {
             // switch (audioManager.getRingerMode()) {
             // case AudioManager.RINGER_MODE_SILENT:
             //     callbackContext.success("SILENT");
-                
+
             //     break;
             // case AudioManager.RINGER_MODE_VIBRATE:
             //     callbackContext.success("VIBRATE");
