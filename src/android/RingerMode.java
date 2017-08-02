@@ -41,7 +41,7 @@ public class RingerMode extends CordovaPlugin {
 
         } else if (action.equals("GET")) {
             //callbackContext.success("SILENT");
-            callbackContext.success(action);
+            callbackContext.success("Not Working");
             // AudioManager audioManager = (AudioManager) cordova.getActivity().getSystemService(Context.AUDIO_SERVICE);
             // switch (audioManager.getRingerMode()) {
             // case AudioManager.RINGER_MODE_SILENT:

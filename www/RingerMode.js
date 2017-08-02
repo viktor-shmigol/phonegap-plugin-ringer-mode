@@ -3,7 +3,6 @@ module.exports = {
         cordova.exec(successCallback, errorCallback, "RingerMode", ringerMode, []);
     },
     get: function (successCallback, errorCallback) {
-        console.log("In get function");
         cordova.exec(successCallback, errorCallback, "RingerMode", "GET", []);
     }
 };
