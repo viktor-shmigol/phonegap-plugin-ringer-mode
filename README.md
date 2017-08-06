@@ -24,8 +24,14 @@ RingerMode.set(ringerMode, function(){
 ##### Enum
 In both of the methods above ringerMode will be either of the following
 
-```` RingerMode.VIBRATE ````
-```` RingerMode.SILENT ````
-```` RingerMode.NORMAL ````
+```` 
+RingerMode.VIBRATE 
+````
+````
+RingerMode.SILENT 
+````
+````
+RingerMode.NORMAL 
+````
 
 these ringer modes are provided by the native android AudioManager class, you can read more about [here](https://developer.android.com/reference/android/media/AudioManager.html)
