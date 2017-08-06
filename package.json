@@ -1,0 +1,27 @@
+{
+  "name": "phonegap-plugin-ringer-mode",
+  "version": "1.0.4",
+  "description": "Lets you set and get ringer mode on Android",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilalasd/phonegap-plugin-ringer-mode.git"
+  },
+  "keywords": [
+    "ringer",
+    "mode",
+    "ringer",
+    "audio",
+    "silent",
+    "vibrate"
+  ],
+  "author": "bilalasd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bilalasd/phonegap-plugin-ringer-mode/issues"
+  },
+  "homepage": "https://github.com/bilalasd/phonegap-plugin-ringer-mode#readme"
+}
