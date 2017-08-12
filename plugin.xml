@@ -1,6 +1,6 @@
     <?xml version="1.0" encoding="UTF-8"?>
     <plugin xmlns="https://github.com/bilalasd/phonegap-plugin-ringer-mode"
-            id="phonegap-plugin-ringer-mode" version="1.0.3">
+            id="phonegap-plugin-ringer-mode" version="1.0.4">
         <name>Ringer Mode</name>
         <description>Plugin to access set and get android ringer mode</description>
         <license></license>
