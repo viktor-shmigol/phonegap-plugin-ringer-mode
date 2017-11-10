@@ -5,7 +5,7 @@
         <description>Plugin to access set and get android ringer mode</description>
         <license></license>
         <keywords>ringer mode, silent, vibrate</keywords>
-        <js-module src="www/ringerMode.js" name="RingerMode">
+        <js-module src="www/RingerMode.js" name="RingerMode">
             <clobbers target="RingerMode" />
         </js-module>
         <platform name="android">
